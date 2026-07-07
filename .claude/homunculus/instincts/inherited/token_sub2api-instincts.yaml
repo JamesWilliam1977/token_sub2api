@@ -1,0 +1,417 @@
+# Instincts generated from https://github.com/JamesWilliam1977/token_sub2api
+# Generated: 2026-07-01T04:42:06.011Z
+# Version: 2.0
+# NOTE: This file supplements (does not replace) any existing curated instincts.
+# High-confidence manually curated instincts should be preserved alongside these.
+
+---
+id: token_sub2api-commit-conventional
+trigger: "when writing a commit message"
+confidence: 0.85
+domain: git
+source: repo-analysis
+source_repo: https://github.com/JamesWilliam1977/token_sub2api
+---
+
+# Token_sub2api Commit Conventional
+
+## Action
+
+Use conventional commit format with prefixes: fix, feat
+
+## Evidence
+
+- 11 commits analyzed
+- Detected conventional commit pattern
+- Examples: fix: localize English UI strings, feat: 抹除 Anthropic OAuth 请求中客户端 dateline 隐写指纹
+
+---
+id: token_sub2api-commit-length
+trigger: "when writing a commit message"
+confidence: 0.6
+domain: git
+source: repo-analysis
+source_repo: https://github.com/JamesWilliam1977/token_sub2api
+---
+
+# Token_sub2api Commit Length
+
+## Action
+
+Write moderate-length commit messages (~50 characters)
+
+## Evidence
+
+- Average commit message length: 50 chars
+- Based on 11 commits
+
+---
+id: token_sub2api-naming-files
+trigger: "when creating a new file"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/JamesWilliam1977/token_sub2api
+---
+
+# Token_sub2api Naming Files
+
+## Action
+
+Use snake_case naming convention
+
+## Evidence
+
+- Analyzed file naming patterns in repository
+- Dominant pattern: snake_case
+
+---
+id: token_sub2api-export-style
+trigger: "when exporting from a module"
+confidence: 0.7
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/JamesWilliam1977/token_sub2api
+---
+
+# Token_sub2api Export Style
+
+## Action
+
+Prefer named exports
+
+## Evidence
+
+- Export pattern analysis
+- Dominant style: named
+
+---
+id: token_sub2api-arch-type-based
+trigger: "when adding new code"
+confidence: 0.8
+domain: architecture
+source: repo-analysis
+source_repo: https://github.com/JamesWilliam1977/token_sub2api
+---
+
+# Token_sub2api Arch Type Based
+
+## Action
+
+Place code in the appropriate type folder (components/, services/, utils/, etc.)
+
+## Evidence
+
+- Type-based module organization detected
+- Folders: 
+
+---
+id: token_sub2api-workflow-frontend-i18n-localization-update
+trigger: "when doing frontend i18n localization update"
+confidence: 0.6
+domain: workflow
+source: repo-analysis
+source_repo: https://github.com/JamesWilliam1977/token_sub2api
+---
+
+# Token_sub2api Workflow Frontend I18n Localization Update
+
+## Action
+
+Follow the frontend-i18n-localization-update workflow:
+1. Edit Vue component files to update or fix UI strings.
+2. Update i18n locale files (e.g., en.ts, zh.ts) with new or corrected translations.
+3. Optionally update composables or utility files related to localization.
+4. Optionally update or add related frontend tests.
+
+## Evidence
+
+- Workflow detected from commit patterns
+- Frequency: ~2x per month
+- Files: frontend/src/components/**/*.vue, frontend/src/i18n/locales/en.ts, frontend/src/i18n/locales/zh.ts
+
+---
+id: token_sub2api-workflow-backend-openai-codex-model-fix-or-extension
+trigger: "when doing backend openai codex model fix or extension"
+confidence: 0.6
+domain: workflow
+source: repo-analysis
+source_repo: https://github.com/JamesWilliam1977/token_sub2api
+---
+
+# Token_sub2api Workflow Backend Openai Codex Model Fix Or Extension
+
+## Action
+
+Follow the backend-openai-codex-model-fix-or-extension workflow:
+1. Edit Go backend service files related to OpenAI Codex logic.
+2. Update or add Go test files to cover new or fixed behavior.
+3. Optionally update related billing, alias, or mapping files.
+
+## Evidence
+
+- Workflow detected from commit patterns
+- Frequency: ~2x per month
+- Files: backend/internal/service/openai_codex_transform.go, backend/internal/service/openai_codex_transform_test.go, backend/internal/service/billing_service.go
+
+---
+id: token_sub2api-instinct-file-naming
+trigger: "When creating or renaming files in the codebase"
+confidence: 0.85
+domain: code-style
+source: repo-analysis
+source_repo: JamesWilliam1977/token_sub2api
+---
+
+# Token_sub2api Instinct File Naming
+
+## Action
+
+Use snake_case for file names
+
+## Evidence
+
+- Pattern in codeStyle.namingConventions.files
+- Consistent file naming in frontend/backend folders
+
+---
+id: token_sub2api-instinct-function-naming
+trigger: "When defining a new function"
+confidence: 0.85
+domain: code-style
+source: repo-analysis
+source_repo: JamesWilliam1977/token_sub2api
+---
+
+# Token_sub2api Instinct Function Naming
+
+## Action
+
+Use camelCase for function names
+
+## Evidence
+
+- Pattern in codeStyle.namingConventions.functions
+- Go code in backend/internal/service
+
+---
+id: token_sub2api-instinct-class-naming
+trigger: "When defining a new class or struct"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: JamesWilliam1977/token_sub2api
+---
+
+# Token_sub2api Instinct Class Naming
+
+## Action
+
+Use PascalCase for class/struct names
+
+## Evidence
+
+- Pattern in codeStyle.namingConventions.classes
+
+---
+id: token_sub2api-instinct-constant-naming
+trigger: "When declaring a constant"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: JamesWilliam1977/token_sub2api
+---
+
+# Token_sub2api Instinct Constant Naming
+
+## Action
+
+Use SCREAMING_SNAKE_CASE for constant names
+
+## Evidence
+
+- Pattern in codeStyle.namingConventions.constants
+
+---
+id: token_sub2api-instinct-import-style
+trigger: "When importing modules or packages"
+confidence: 0.7
+domain: code-style
+source: repo-analysis
+source_repo: JamesWilliam1977/token_sub2api
+---
+
+# Token_sub2api Instinct Import Style
+
+## Action
+
+Use a mixed import style as appropriate for the language and context
+
+## Evidence
+
+- Pattern in codeStyle.importStyle
+- Go and TypeScript files in repo
+
+---
+id: token_sub2api-instinct-export-style
+trigger: "When exporting modules or functions"
+confidence: 0.7
+domain: code-style
+source: repo-analysis
+source_repo: JamesWilliam1977/token_sub2api
+---
+
+# Token_sub2api Instinct Export Style
+
+## Action
+
+Use named exports
+
+## Evidence
+
+- Pattern in codeStyle.exportStyle
+- frontend/src/composables/**/*.ts
+
+---
+id: token_sub2api-instinct-go-test-location
+trigger: "When adding or updating backend Go code"
+confidence: 0.8
+domain: testing
+source: repo-analysis
+source_repo: JamesWilliam1977/token_sub2api
+---
+
+# Token_sub2api Instinct Go Test Location
+
+## Action
+
+Place related test files alongside implementation files (mixed test location)
+
+## Evidence
+
+- Pattern in architecture.folderStructure.testLocation
+- backend/internal/service/openai_codex_transform.go + openai_codex_transform_test.go
+
+---
+id: token_sub2api-instinct-go-test-pattern
+trigger: "When adding new backend logic in Go"
+confidence: 0.85
+domain: testing
+source: repo-analysis
+source_repo: JamesWilliam1977/token_sub2api
+---
+
+# Token_sub2api Instinct Go Test Pattern
+
+## Action
+
+Add or update corresponding *_test.go files to cover new or changed behavior
+
+## Evidence
+
+- backend/internal/service/openai_codex_transform.go + openai_codex_transform_test.go
+- backend/internal/service/billing_service.go + billing_service_test.go
+
+---
+id: token_sub2api-instinct-frontend-test-pattern
+trigger: "When updating frontend components or localization logic"
+confidence: 0.7
+domain: testing
+source: repo-analysis
+source_repo: JamesWilliam1977/token_sub2api
+---
+
+# Token_sub2api Instinct Frontend Test Pattern
+
+## Action
+
+Optionally update or add related frontend tests (*.spec.ts)
+
+## Evidence
+
+- frontend/src/components/**/*.spec.ts
+- frontend-i18n-localization-update workflow
+
+---
+id: token_sub2api-instinct-commit-format
+trigger: "When writing a commit message"
+confidence: 0.9
+domain: git
+source: repo-analysis
+source_repo: JamesWilliam1977/token_sub2api
+---
+
+# Token_sub2api Instinct Commit Format
+
+## Action
+
+Use conventional commit format: <type>(<scope>): <description>
+
+## Evidence
+
+- fix: localize English UI strings
+- feat: 抹除 Anthropic OAuth 请求中客户端 dateline 隐写指纹
+- fix(openai): preserve encrypted reasoning across turns on codex OAuth path
+
+---
+id: token_sub2api-instinct-commit-prefix
+trigger: "When committing a bug fix or new feature"
+confidence: 0.9
+domain: git
+source: repo-analysis
+source_repo: JamesWilliam1977/token_sub2api
+---
+
+# Token_sub2api Instinct Commit Prefix
+
+## Action
+
+Use 'fix' for bug fixes and 'feat' for new features as commit prefixes
+
+## Evidence
+
+- fix: localize English UI strings
+- feat: 抹除 Anthropic OAuth 请求中客户端 dateline 隐写指纹
+
+---
+id: token_sub2api-instinct-frontend-i18n-workflow
+trigger: "When someone needs to update, fix, or clean up localized UI strings (e.g., English/Chinese) in the frontend"
+confidence: 0.95
+domain: workflow
+source: repo-analysis
+source_repo: JamesWilliam1977/token_sub2api
+---
+
+# Token_sub2api Instinct Frontend I18n Workflow
+
+## Action
+
+Edit Vue component files, update i18n locale files (en.ts, zh.ts), and optionally update related composables and frontend tests
+
+## Evidence
+
+- frontend-i18n-localization-update workflow
+- Commits: fix: localize English UI strings
+- Files: frontend/src/components/**/*.vue, frontend/src/i18n/locales/en.ts, frontend/src/i18n/locales/zh.ts
+
+---
+id: token_sub2api-instinct-backend-openai-codex-workflow
+trigger: "When someone needs to fix, extend, or adjust OpenAI Codex model support, including handling of model names, reasoning context, or billing, and verify correctness with tests"
+confidence: 0.9
+domain: workflow
+source: repo-analysis
+source_repo: JamesWilliam1977/token_sub2api
+---
+
+# Token_sub2api Instinct Backend Openai Codex Workflow
+
+## Action
+
+Edit Go backend service files related to OpenAI Codex logic, update/add Go test files, and optionally update billing, alias, or mapping files
+
+## Evidence
+
+- backend-openai-codex-model-fix-or-extension workflow
+- Commits: fix(openai): preserve encrypted reasoning across turns on codex OAuth path
+- Files: backend/internal/service/openai_codex_transform.go, openai_codex_transform_test.go
+
